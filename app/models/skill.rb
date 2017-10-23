@@ -1,3 +1,3 @@
 class Skill < ApplicationRecord
-	enum type: [:language, :extra]
+	enum skill_type: [:language, :technical, :other]
 end

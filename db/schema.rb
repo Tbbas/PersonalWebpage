@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171020140600) do
+ActiveRecord::Schema.define(version: 20171023170753) do
 
   create_table "skills", force: :cascade do |t|
-    t.string "name"
-    t.integer "type"
-    t.integer "level"
+    t.string "skill_name"
+    t.integer "skill_type"
+    t.integer "skill_level"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

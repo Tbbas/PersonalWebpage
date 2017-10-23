@@ -1,0 +1,34 @@
+<%= form_with(model: skill, local: true) do |form| %>
+  <% if skill.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(skill.errors.count, "error") %> prohibited this skill from being saved:</h2>
+
+      <ul>
+      <% skill.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="form-row align-items-center">
+  <div class="col-auto">
+    <%= form.label :skill_name,class: "sr-only" %>
+    <%= form.text_field :skill_name, id: :skill_skill_name, class: "form-control", placeholder: "Skill Name" %>
+  </div>
+
+  <div class="col-auto">
+    <%= form.label :skill_type %>
+    <%= form.select :skill_type, Skill.skill_types.keys,class: "form-control", id: :skill_skill_type  %>
+  </div>
+
+  <div class="col-auto">
+    <%= form.label :skill_level %>
+    <%= form.select :skill_level, options_for_select(0..5),class: "form-control pluralize", id: :skill_skill_level %>
+  </div>
+
+  <div class="col-auto">
+    <%= form.submit "Create" , class: "btn btn-primary" %>
+  </div>
+</div>
+<% end %>
