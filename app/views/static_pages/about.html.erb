@@ -1,0 +1,20 @@
+<div class="container">
+<div class="jumbotron">
+	<h1 class="">About Me</h1>
+</div>
+<div class="about">
+<h2 class="section-header">Who am I?</h2>
+<hr>
+Hello, my name is Tobias Alldén.
+I am a student at the Software engineering program at Chalmers University of Technology, Gothenburg, Sweden. I am currently in my fourth year and am studying towards a master in Software engineering.  
+</div>
+<div class="skills">
+	<h2 class="section-header">Skills</h2>
+	<%= @skills.each do |skill| %>
+	<%= render 'skill'%>
+	<%end%>
+<hr>
+</div>
+<div class="photos">
+</div>
+</div>

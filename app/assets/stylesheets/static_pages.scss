@@ -1,0 +1,60 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+ .bg {
+ 	background-image: url(bg.jpeg);
+ 		
+
+    /* Full height */
+    height: 100%; 
+
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     &:before {
+    content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right,#000000,#000000);
+        opacity: .35; 
+  }
+ }
+
+.main-container {
+	color: white;
+	position: absolute;
+	margin-top: 25%;
+}
+.main-container h1 {
+	font-size: 5em;
+	font-family: 'Roboto', sans-serif;
+	font-style: thin;
+	animation-duration: 0.5s;
+	text-align: center;
+
+}
+.main-container p {
+	font-family: 'Raleway', sans-serif;
+	animation-delay: 0.5s;
+	font-size: 100%;
+	font-spacing: 0.1;
+	text-align: center;
+}
+#links {
+	list-style-type: none;
+}
+#links li {
+	display: inline;
+	font-family: 'Raleway', thin;
+	font-size: 2em; 
+
+}
+.section-header {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
