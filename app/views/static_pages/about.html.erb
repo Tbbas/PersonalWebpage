@@ -9,11 +9,24 @@ Hello, my name is Tobias Alldén.
 I am a student at the Software engineering program at Chalmers University of Technology, Gothenburg, Sweden. I am currently in my fourth year and am studying towards a master in Software engineering.  
 </div>
 <div class="skills">
-	<h2 class="section-header">Skills</h2>
+<div class="col-md-6 skills">
+	<h2 class="section-header">Programming Skills</h2>
 	<hr>
-	<%= render @skills %>
-<hr>
+	<%= render @language_skills %>
 </div>
+<div class="col-md-6 skills">
+<h2 class="section-header">Other Skills</h2>
+<hr>
+<%= render @other_skills %>
+</div>
+</div>
+
+<div class="portfolio col-md-12">
+<h2 class="section-header">Portfolio</h2>
+	<hr>
+	<p>Below follows the various projects I have completed.</p>
+
+
 <div class="photos">
 </div>
 </div>
