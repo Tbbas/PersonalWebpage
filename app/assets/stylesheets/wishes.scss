@@ -1,0 +1,36 @@
+// Place all the styles related to the Wishes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+ .bg_wishes {
+ 	//background-image: url(bg_wishes.jpeg);
+ 		
+
+    background: url('bg2.jpeg') no-repeat center center fixed;
+    background-size:100% auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:#fff;
+    background-color:#00000;
+    min-height:100%;
+    position: relative;
+
+
+ }
+
+
+.header_bg {
+	background-position: center;
+	background-size: cover;
+	background-image: url(header_img.jpeg);
+}
+.filter {
+    position: relative;
+    background-color: rgba(0,0,0,0.4);
+    background-size: cover;
+    bottom: 0px;
+    height:100vh;
+}

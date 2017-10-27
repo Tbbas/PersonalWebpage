@@ -1,0 +1,36 @@
+<div class="bg_wishes" id="bg">
+	<div class="filter">
+<div class="container">
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+			<img src="<%=@wish.image.url %>" class="img-fluid">
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+	<div class="row">
+		<span class="col-md-3"></span>
+		<h1 class="text-center text-light roboto col-md-6"><%= @wish.name %> </h1>
+		<span class="col-md-3"></span>
+	</div>
+	<div class="row">
+		<span class="col-md-3"></span>	
+		<p class="text-center text-light raleway col-md-6"><%= @wish.description %></p>
+		<span class="col-md-3"></span>
+	</div>
+	<div class="row">
+		<span class="col-md-3"></span>
+		<div class="col-md-6 text-center">
+		<%= link_to 'Back', wishes_path, class: "btn btn-warning col-md-4" %>
+		<%= link_to 'Till Produkt ->', @wish.link, class: "btn btn-success col-md-6" %>
+		<% if admin_signed_in? %>
+		<%= link_to 'Edit', edit_wish_path(@wish), class: "btn btn-warning col-md-2" %> |
+		<% end %>
+		</div>
+		<span class="col-md-3"></span>
+
+	</div>
+</div>
+</div>
+</div>
+

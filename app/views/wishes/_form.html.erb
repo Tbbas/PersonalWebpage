@@ -1,0 +1,46 @@
+  <%= form_with(model: wish, local: true, multipart: true) do |form| %>
+  <% if wish.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(wish.errors.count, "error") %> prohibited this wish from being saved:</h2>
+
+      <ul>
+      <% wish.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :wish_name, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :description %>
+    <%= form.text_field :description, id: :wish_description, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :wish_price, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :link %>
+    <%= form.text_field :link, id: :wish_link, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :image %><br>
+    <%= form.file_field :image, class: "form-control" %>
+    <% if form.object.image? %>
+      <%= image_tag form.object.image.url, class: "img-thumbnail" %>
+      <%= form.label :remove_image %>
+      <%= form.check_box :remove_image %> 
+    <% end %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'submit', class: "btn btn-success", style: "width: 100%;" %>
+  </div>
+<% end %>
