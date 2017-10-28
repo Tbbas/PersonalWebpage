@@ -1,5 +1,6 @@
+
 # Change these
-server '207.154.241.171', port: 80, roles: [:web, :app, :db], primary: true
+server '207.154.241.171', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:Tbbas/PersonalWepage.git'
 set :application,     'PersonalWepage'
@@ -78,7 +79,6 @@ namespace :deploy do
   after  :finishing,    :cleanup
   after  :finishing,    :restart
 end
-
 # ps aux | grep puma    # Get puma pid
 # kill -s SIGUSR2 pid   # Restart puma
 # kill -s SIGTERM pid   # Stop puma
