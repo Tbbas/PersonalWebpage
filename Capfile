@@ -12,6 +12,8 @@ require 'capistrano/rbenv'
 set :rbenv_type, :user
 set :rbenv_ruby, '2.4.1'
 
+load 'deploy/assets'
+
 # Load the SCM plugin appropriate to your project:
 #
 # require "capistrano/scm/hg"
