@@ -58,3 +58,13 @@
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 }
+.container-shadow {
+	margin-top: 50px;
+    box-shadow: 0 0 30px black;
+    padding:0 15px 0 15px;
+}
+.blue-gradient {
+	background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #56ccf2, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #56ccf2, #2f80ed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

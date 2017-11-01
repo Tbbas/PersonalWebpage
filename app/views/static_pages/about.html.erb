@@ -1,32 +1,51 @@
-<div class="container">
-<div class="jumbotron">
-	<h1 class="">About Me</h1>
+<div class="container-fluid" id="presentation">
+<div class="jumbotron-fluid bg-success">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top ">
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav roboto" style="float: right;">
+      <a class="nav-item nav-link active" href="#presentation">About</a>
+      <a class="nav-item nav-link" href="#skills">Skills</a>
+      <a class="nav-item nav-link" href="#portfolio">Previous Work</a>
+    </div>
+  </div>
+</nav>
+
+	<h1 class="display-1 text-center">Hey! I'm Tobias</h1>
+	<h4 class="text-center">Developer</h4>
 </div>
 <div class="about">
-<h2 class="section-header">Who am I?</h2>
-<hr>
-Hello, my name is Tobias Alldén.
-I am a student at the Software engineering program at Chalmers University of Technology, Gothenburg, Sweden. I am currently in my fourth year and am studying towards a master in Software engineering.  
+<div class="col-md-6">
+<p>Hello, my name is Tobias Alldén.
+I am a student at the Software engineering program at Chalmers University of Technology, Gothenburg, Sweden. I am currently in my fourth year and am studying towards a master in Software engineering.  </p>
 </div>
-<div class="skills">
-<div class="col-md-6 skills">
-	<h2 class="section-header">Programming Skills</h2>
-	<hr>
-	<%= render @language_skills %>
+<div class="col-md-6">
+	image
 </div>
-<div class="col-md-6 skills">
-<h2 class="section-header">Other Skills</h2>
-<hr>
-<%= render @other_skills %>
 </div>
 </div>
 
-<div class="portfolio col-md-12">
-<h2 class="section-header">Portfolio</h2>
-	<hr>
-	<p>Below follows the various projects I have completed.</p>
 
-
-<div class="photos">
+<div class="container-fluid blue-gradient" id="skills">
+<div class="row text-light text-center">
+	<h2 class="roboto col-md-12">What Can I do?</h2>
 </div>
+<div class="row">
+	<div class="col-md-6 text-light text-center">
+		<h3 class="roboto">Programming</h3>
+		<%= render @language_skills %>
+	</div>
+	<div class="col-md-6 text-light text-center">
+		<h3 class="roboto">Other</h2>
+		<%= render @other_skills %>
+	</div>
+</div>
+</div>
+
+<div class="container-fluid" id="portfolio">
+<h2 class="roboto">---Here's what I've done so far---</h2>
+</div>
+<div class="container">
+	<h2>Get in touch</h2>
+	<p>links</p>
+
 </div>
