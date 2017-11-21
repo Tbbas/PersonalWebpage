@@ -1,15 +1,14 @@
 <div class="bg_wishes" id="bg">
-  <div class="container">
-    <div class="jumbotron" style="background-color: transparent;">
+  <div class="row">
+    <div class="col s12" style="background-color: transparent;">
       <h1 style="text-align: center; font-family: 'Bilbo', cursive;">Önskelista</h1>
-      <hr>
+      <% if admin_signed_in?  %>
+       <a href="<%=new_wish_path%>" class ="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+       <%end%>
     </div>
-    <div id="control-buttons">
-  	   <% if admin_signed_in?  %>
-	     <%= link_to 'add', new_wish_path, class: "mdl-button bg-success"%>
-	     <%end%>
-    </div>
-    <div class="card-columns text-center">
+  <div class="container">
+    <div class="row">
       <%= render @wishes %>
     </div>
+</div>
 </div>

@@ -68,3 +68,9 @@
   background: -webkit-linear-gradient(to right, #56ccf2, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #56ccf2, #2f80ed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.header {
+	height: 75vh;
+	text-align: center;
+	padding-top: 10%;
+}
+.navbar-fixed {position: absolute;z-index:999999999;}

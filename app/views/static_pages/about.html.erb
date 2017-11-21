@@ -1,51 +1,37 @@
-<div class="container-fluid" id="presentation">
-<div class="jumbotron-fluid bg-success">
-<nav class="navbar navbar-expand-lg navbar-light sticky-top ">
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav roboto" style="float: right;">
-      <a class="nav-item nav-link active" href="#presentation">About</a>
-      <a class="nav-item nav-link" href="#skills">Skills</a>
-      <a class="nav-item nav-link" href="#portfolio">Previous Work</a>
-    </div>
-  </div>
-</nav>
-
-	<h1 class="display-1 text-center">Hey! I'm Tobias</h1>
-	<h4 class="text-center">Developer</h4>
-</div>
-<div class="about">
-<div class="col-md-6">
-<p>Hello, my name is Tobias Alldén.
-I am a student at the Software engineering program at Chalmers University of Technology, Gothenburg, Sweden. I am currently in my fourth year and am studying towards a master in Software engineering.  </p>
-</div>
-<div class="col-md-6">
-	image
-</div>
-</div>
+<div class="col s12 blue">
+<%=render 'shared/nav' %> 
+	<div class="header white-text">
+	<h4 id="greeting" class="animated fadeInDown">Hello There!, I'm</h4>
+	<h1 id="name" class="animated zoomIn" style="animation-delay: 0.5s">Tobias Alldén</h1>
+	<h5 id="role" class="animated fadeInDown" style="animation-delay: 1.2s">A Software Engineering student from Gothenburg, Sweden</h5>
 </div>
 
-
-<div class="container-fluid blue-gradient" id="skills">
-<div class="row text-light text-center">
-	<h2 class="roboto col-md-12">What Can I do?</h2>
-</div>
-<div class="row">
-	<div class="col-md-6 text-light text-center">
-		<h3 class="roboto">Programming</h3>
-		<%= render @language_skills %>
-	</div>
-	<div class="col-md-6 text-light text-center">
-		<h3 class="roboto">Other</h2>
-		<%= render @other_skills %>
-	</div>
-</div>
-</div>
-
-<div class="container-fluid" id="portfolio">
-<h2 class="roboto">---Here's what I've done so far---</h2>
 </div>
 <div class="container">
-	<h2>Get in touch</h2>
-	<p>links</p>
+    <div class="row">
+    	<h4 class="blue-text center-align animated fadeIn" style="animation-delay: 1.6s">What do I do?</h4>
+      <div class="col s4 center-align animated fadeInLeft" style="animation-delay: 2.0s">
+         <i class="large material-icons">insert_chart</i> 
+         <h5>Devloper</h5>
+         <p>Knows several programming languages, used to working in linux enviroments</p>
+      </div>
+      <div class="col s4 center-align animated fadeInUp" style="animation-delay: 2.0s">
+         <i class="large material-icons green-text">insert_chart</i> 
+        <h5>Web Developer</h5>
+        <p>Currently working as a web devloper. Knows full stack and design</p>
+      </div>
+      <div class="col s4 center-align animated fadeInRight" style="animation-delay: 2.0s">
+         <i class="large material-icons">insert_chart</i> 
+         <h5>Software Engineer</h5>
+         <p>Currently Pursuing a master in Software Engineering</p>
+        </div>
+    </div>
+  </div>.
+    <div class="row blue-grey" id="portfolio">
+      <div class="col s4">
+      </div>
+      <div class="col s4">JOB</div>
+      <div class="col s4">JOB</div>
 
+    </div>
 </div>

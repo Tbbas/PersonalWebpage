@@ -33,6 +33,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
 
+gem 'jquery-rails'
+
+
 
 gem 'devise'
 # Use Capistrano for deployment

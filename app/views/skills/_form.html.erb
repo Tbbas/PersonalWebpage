@@ -10,25 +10,24 @@
       </ul>
     </div>
   <% end %>
-
-<div class="form-row align-items-center">
-  <div class="col-auto">
+<div class="col s12 grey lighten-2 black-text">
+  <div class="input-field">
     <%= form.label :skill_name,class: "sr-only" %>
     <%= form.text_field :skill_name, id: :skill_skill_name, class: "form-control", placeholder: "Skill Name" %>
   </div>
 
-  <div class="col-auto">
+  <div class="input-field">
     <%= form.label :skill_type %>
-    <%= form.select :skill_type, Skill.skill_types.keys,class: "form-control", id: :skill_skill_type  %>
+    <%= form.select :skill_type, Skill.skill_types.keys, id: :skill_skill_type  %>
   </div>
 
-  <div class="col-auto">
+  <div class="input-field">
     <%= form.label :skill_level %>
-    <%= form.select :skill_level, options_for_select(0..5),class: "form-control pluralize", id: :skill_skill_level %>
+    <%= form.select :skill_level, options_for_select(0..5), id: :skill_skill_level %>
   </div>
 
-  <div class="col-auto">
+  <div class="input-field">
     <%= form.submit "Create" , class: "btn btn-primary" %>
   </div>
-</div>
 <% end %>
+</div>
