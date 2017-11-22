@@ -4,9 +4,13 @@
       <img class="activator" src=<%= wish.image %> alt="<%= wish.name %> image" >
     </div>
     <div class="card-content blue-grey">
-      <span class="card-title activator grey-text text-darken-4"><%= wish.name %><i class="material-icons right">more_vert</i></span>
+      <span class="card-title activator white-text"><%= wish.name %><i class="material-icons right">more_vert</i></span>
+      <% unless wish.price.empty? %>
       <h6 class="red-text">~<%=wish.price%></h6>
+      <%end %>
+      <% unless wish.link.empty? %>
       <p><a class="waves-effect waves-light btn" href="<%=wish.link %>"><i class="large material-icons">send</i></a></p>
+      <% end %> 
       <% if admin_signed_in?  %>
       <%= link_to "X", wish_path(wish), method: :delete, data: { confirm: 'Are you certain you want to delete this?' }, class:"waves-effect waves-light btn right red" %>
       <p><a class="waves-effect waves-light btn right yellow" href="<%=edit_wish_path(wish) %>"><i class="material-icons">edit</i></a></p>
